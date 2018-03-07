@@ -6,16 +6,17 @@ using UnityEngine.EventSystems;
 public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
 	public Transform target;
-	public float speed;
+	public float speed = 2f;
 	public float rotate_speed = 25f;
+	public bool is_correct = true;
 
-	private bool isMoving = false;
+	private bool is_moving = false;
 	private float my_distance = 0f;
 	private float x_angle;
 
 	// Use this for initialization
 	void Start () {
-		this.target = GameObject.Find("Board").transform;
+		//this.target = GameObject.Find("Board").transform;
 	}
 
 
@@ -36,7 +37,7 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
 	private void moveToTarget(){
 		Debug.Log ("Pieza was clicked");
-		this.isMoving = true;
+		this.is_moving = true;
 	}
 
 
@@ -45,7 +46,7 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	// Update is called once per frame
 	void Update () {
 		my_distance = Vector3.Distance (target.position, this.transform.position);
-		if (this.isMoving) {
+		if (this.is_moving) {
 			float step = speed * Time.deltaTime;
 			this.transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 
@@ -53,8 +54,18 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 			this.transform.rotation = Quaternion.Euler (this.x_angle, 0, 0);
 
 			if (this.my_distance <= 0.1f) {
-				this.isMoving = false;
+				this.is_moving = false;
 				this.transform.rotation = Quaternion.Euler (-90, 0, 0);
+
+				if (this.is_correct) {
+					//Trigger correct answer sequence.
+
+					//New question and set of pieces appears
+				} else {
+					//this triggers
+
+					Destroy (this.gameObject);
+				}
 			}
 		}
 	}
