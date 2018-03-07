@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/res/merged/release/drawable-nodpi-v4/vr_icon_back.png",
+        "source": "/Users/Merino/.android/build-cache/ae3efc5cea47fc8175d8a91cf75aefd8dc16ea1b/output/res/drawable-nodpi-v4/vr_icon_back.png"
+    },
+    {
+        "merged": "/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/res/merged/release/drawable-nodpi-v4/vr_icon_front.png",
+        "source": "/Users/Merino/.android/build-cache/ae3efc5cea47fc8175d8a91cf75aefd8dc16ea1b/output/res/drawable-nodpi-v4/vr_icon_front.png"
+    }
+]

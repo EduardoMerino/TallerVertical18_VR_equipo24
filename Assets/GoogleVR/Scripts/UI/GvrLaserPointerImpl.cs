@@ -219,7 +219,7 @@ public class GvrLaserPointerImpl : GvrBasePointer {
 
     // Adjust transparency
     float alpha = GvrArmModel.Instance.preferredAlpha;
-    LaserLineRenderer.SetColors(Color.Lerp(Color.clear, LaserColor, alpha), Color.clear);
+    //LaserLineRenderer.SetColors(Color.Lerp(Color.clear, LaserColor, alpha), Color.clear);
   }
 #endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 }

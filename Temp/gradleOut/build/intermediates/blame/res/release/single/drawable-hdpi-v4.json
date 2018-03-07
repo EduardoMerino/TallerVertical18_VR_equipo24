@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/res/merged/release/drawable-hdpi-v4/transition.png",
+        "source": "/Users/Merino/.android/build-cache/88af58576dbe3b3a09aae2ee7d2853fa8d5163a2/output/res/drawable-hdpi-v4/transition.png"
+    },
+    {
+        "merged": "/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_close_white_24.png",
+        "source": "/Users/Merino/.android/build-cache/88af58576dbe3b3a09aae2ee7d2853fa8d5163a2/output/res/drawable-hdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_settings_white_24.png",
+        "source": "/Users/Merino/.android/build-cache/88af58576dbe3b3a09aae2ee7d2853fa8d5163a2/output/res/drawable-hdpi-v4/quantum_ic_settings_white_24.png"
+    }
+]

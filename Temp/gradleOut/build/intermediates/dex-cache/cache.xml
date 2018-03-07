@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f21393b4b6b3caa00a3df5116d14882fa93ca8b6">
+        <dex dex="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_33aebcefc603b1eddef501ae6a5486a78bd0096d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/libs/libprotobuf-java-nano.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd53f117550c58490f29c2e27afca051626260d">
+        <dex dex="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/pre-dexed/release/libprotobuf-java-nano_654665c9175e3bf6bb2f42e8f18641f49b268cfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d302418aa3482b8db770278260340aed47dd37a">
+        <dex dex="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_14bd9bdad2ecc1d43ec3edd29a5887e273ab44bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Merino/.android/build-cache/ae3efc5cea47fc8175d8a91cf75aefd8dc16ea1b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="36e70259b99d30e8bd89f2246a70d44a53cb309f">
+        <dex dex="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_4da147428f7956fe84beca61c93d77f913dafcc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Merino/.android/build-cache/88af58576dbe3b3a09aae2ee7d2853fa8d5163a2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d855517e34860858365d4a28dbe81d5dc094d8">
+        <dex dex="/Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_9b39464c3e403795b26507454ec85c226197f969.jar" />
+    </item>
+
+</items>
