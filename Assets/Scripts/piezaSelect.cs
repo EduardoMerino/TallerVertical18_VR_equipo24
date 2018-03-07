@@ -9,7 +9,9 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	public float speed = 2f;
 	public float rotate_speed = 25f;
 	public bool is_correct = true;
+	public bool is_activated = true;
 
+	private pieceManager my_piece_manager;
 	private bool is_moving = false;
 	private float my_distance = 0f;
 	private float x_angle;
@@ -17,12 +19,15 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	// Use this for initialization
 	void Start () {
 		//this.target = GameObject.Find("Board").transform;
+		my_piece_manager =  GameObject.Find("PiecesManagerObj").GetComponent<pieceManager>();
 	}
 
 
 
 	public void OnPointerEnter(PointerEventData data){
-		StartCoroutine (this.startMovement());
+		if (this.is_activated) {
+			StartCoroutine (this.startMovement ());
+		}
 	}
 
 	public void OnPointerExit(PointerEventData data){
@@ -30,6 +35,7 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	}
 
 	private IEnumerator startMovement(){
+		this.my_piece_manager.deactivateOthers (this);
 		yield return new WaitForSeconds (1f);
 		this.moveToTarget ();
 	}
@@ -59,10 +65,16 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
 				if (this.is_correct) {
 					//Trigger correct answer sequence.
+					//play audio
+					//when audio ends:
+					this.my_piece_manager.activateAll ();
 
 					//New question and set of pieces appears
 				} else {
 					//this triggers
+					//play audio
+					//when audio ends:
+					this.my_piece_manager.activateAll ();
 
 					Destroy (this.gameObject);
 				}

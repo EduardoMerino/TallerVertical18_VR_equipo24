@@ -33,15 +33,15 @@ ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/And
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:3:135-160
 application
 ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:4:3-19:17
-MERGED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:11:5-27:19
+MERGED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:11:5-27:19
 	android:label
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:4:50-82
 	android:supportsRtl
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:14:9-35
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:14:9-35
 	android:icon
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:4:16-49
 	android:allowBackup
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:12:9-35
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:12:9-35
 	android:banner
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:4:105-142
 	android:theme
@@ -116,9 +116,9 @@ ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/And
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:18:16-49
 uses-sdk
 ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:20:3-72
-MERGED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:7:5-9:41
-MERGED from [:gvr:] /Users/Merino/.android/build-cache/88af58576dbe3b3a09aae2ee7d2853fa8d5163a2/output/AndroidManifest.xml:5:5-7:41
-MERGED from [:unitygvr:] /Users/Merino/.android/build-cache/ae3efc5cea47fc8175d8a91cf75aefd8dc16ea1b/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:gvr:] /Users/Merino/.android/build-cache/5b48c0800de6283886a9583357dc5e6bed795f4f/output/AndroidManifest.xml:5:5-7:41
+MERGED from [:unitygvr:] /Users/Merino/.android/build-cache/bdde6aff1e0fc9782f055e8c16507fe7f53af154/output/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:20:40-69
 		INJECTED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml
@@ -156,18 +156,18 @@ ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/And
 	android:name
 		ADDED from /Users/Merino/Unity Projects/AndroidVR_01/Temp/gradleOut/src/main/AndroidManifest.xml:26:17-80
 activity#com.google.gvr.permissionsupport.TransitionVRActivity
-ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:17:9-26:20
+ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:17:9-26:20
 	android:enableVrMode
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:20:13-106
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:20:13-106
 	android:label
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:21:13-45
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:21:13-45
 	android:configChanges
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:19:13-59
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:19:13-59
 	android:name
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:18:13-81
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:18:13-81
 intent-filter#android.intent.category.LAUNCHER+com.google.intent.category.DAYDREAM
-ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:22:13-25:29
+ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:22:13-25:29
 category#com.google.intent.category.DAYDREAM
-ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:24:17-80
+ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:24:17-80
 	android:name
-		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/bd64172fa7c5832f9648945eda6e2de3cfeb7df1/output/AndroidManifest.xml:24:27-77
+		ADDED from [:gvr-permissionsupport-release:] /Users/Merino/.android/build-cache/732cd3a471e5c325f8f11037b4112af9cc476888/output/AndroidManifest.xml:24:27-77
