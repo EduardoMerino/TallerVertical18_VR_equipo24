@@ -210,5 +210,3 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
 8fcbfd296c53a50c4f1d2fee4369926b Assembly-CSharp.dll:.pieceManager
-2ea7681f5b93d8c6395c05fba1373fb0 Assembly-CSharp.dll:.RenderInCubeMap
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Desapear

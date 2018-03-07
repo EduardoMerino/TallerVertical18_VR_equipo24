@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class piezaSelect : MonoBehaviour {
+	/*
 
 	public Transform target;
 	public float speed = 2f;
@@ -81,4 +82,5 @@ public class piezaSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 			}
 		}
 	}
+	*/
 }
