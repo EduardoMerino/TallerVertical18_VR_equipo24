@@ -119,7 +119,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					} else {
 						//Trigger incorrect answer sequence. 
 						//play audio
-						//display image
+						//display image.
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
 						this.is_bar_active = true;
