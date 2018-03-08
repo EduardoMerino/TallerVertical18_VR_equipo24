@@ -17,7 +17,9 @@ public class pieceManager : MonoBehaviour {
 
 	public void activateAll(){
 		foreach (pieceSelectAlt piece_in_list in this.pieces_list) {
-			piece_in_list.is_activated = true;
+			if (!piece_in_list.is_on_goal) {
+				piece_in_list.is_activated = true;
+			}
 		}
 	}
 
