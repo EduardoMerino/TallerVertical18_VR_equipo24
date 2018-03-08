@@ -17,6 +17,9 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	public AudioClip Audio;
 	public Texture2D history;
 
+	public GameObject pieza1;
+	public GameObject pieza2; 
+
 	private Audio_manager AudioM;
 	private float rim=2.0f;
 	private MeshRenderer meshR;
@@ -32,6 +35,8 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	private float distance_from_start = 0f;
 	private float x_angle;
 
+
+
 	// Use this for initialization
 	void Start () {
 		my_piece_manager =  GameObject.Find("PiecesManagerObj").GetComponent<pieceManager>();
@@ -40,6 +45,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		this.is_activated = false;
 		this.meshR = this.GetComponentInChildren<MeshRenderer> ();
 		this.AudioM = GameObject.FindGameObjectWithTag ("Audio").GetComponent<Audio_manager> ();
+		//this.pieza1;
 		//this.gameObject.SetActive (false);
 	}
 
@@ -122,17 +128,26 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					if (this.is_correct) {
 						//Trigger correct answer sequence.
 						AudioM.PlayAudio(1,this.Audio,this.history);
+
+						pieza1.SetActivate (false);
+						pieza2.SetActivate (false);
+
 						//play audio
 						//display image.
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
 						this.my_piece_manager.changeQuestion ();
 
+
+
 						//New question and set of pieces appears
 					} else {
 						//Trigger incorrect answer sequence. 
 						//play audio
 						AudioM.PlayAudio(2,this.Audio,this.history);
+
+						Debug.Log ("audio maton");
+
 						//display image
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
