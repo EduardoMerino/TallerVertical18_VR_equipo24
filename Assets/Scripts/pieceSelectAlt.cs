@@ -95,8 +95,8 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 				float step = speed * Time.deltaTime;
 				this.transform.position = Vector3.MoveTowards (this.transform.position, this.target.position, step);
 
-				this.x_angle += Time.deltaTime * -this.rotate_speed;
-				this.transform.rotation = Quaternion.Euler (this.x_angle, 0, 0);
+				this.x_angle += Time.deltaTime * this.rotate_speed;
+				this.transform.rotation = Quaternion.Euler (-this.x_angle, 0, 0);
 
 				//Reached location at board:
 				if (this.my_distance <= 0.1f) {
@@ -110,6 +110,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					if (this.is_correct) {
 						//Trigger correct answer sequence.
 						//play audio
+						//display image.
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
 						this.my_piece_manager.changeQuestion ();
@@ -118,6 +119,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					} else {
 						//Trigger incorrect answer sequence. 
 						//play audio
+						//display image
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
 						this.is_bar_active = true;
