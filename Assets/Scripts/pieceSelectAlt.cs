@@ -55,12 +55,12 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 			my_distance = Vector3.Distance (this.target.position, this.transform.position);
 			distance_from_start = Vector3.Distance (this.start_position.position, this.transform.position);
-			Transform child = transform.GetChild(0);
+			Transform child = transform.GetChild (0);
 
 			//move piece to start position:
 			if (!this.is_on_start_position) {
 				float step = (speed + 4f) * Time.deltaTime;
-				this.transform.position = Vector3.MoveTowards(this.transform.position, this.start_position.position, step);
+				this.transform.position = Vector3.MoveTowards (this.transform.position, this.start_position.position, step);
 				if (this.distance_from_start <= 0.1f) {
 					Debug.Log ("Reached my start position");
 					this.is_activated = true;
@@ -71,30 +71,29 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			}
 
 			//Handle bar behaviour: 
-			if (this.gazed_at && this.is_bar_active){
+			if (this.gazed_at && this.is_bar_active) {
 				timer += Time.deltaTime;
-				load_bar.SetActive(true);
+				load_bar.SetActive (true);
 
-				Vector3 newScale = new Vector3((timer + 1) / gaze_time, child.localScale.y, child.localScale.z);
-				Vector3 newPosition = new Vector3((timer / gaze_time) / 2, child.localPosition.y, child.localPosition.z);
+				Vector3 newScale = new Vector3 ((timer + 1) / gaze_time, child.localScale.y, child.localScale.z);
+				Vector3 newPosition = new Vector3 ((timer / gaze_time) / 2, child.localPosition.y, child.localPosition.z);
 
 				child.localScale = newScale;
 				child.localPosition = newPosition;
-				if (timer >= gaze_time)
-				{
+				if (timer >= gaze_time) {
 					//ExecuteEvents.Execute(gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
-					myPointerDown();
+					myPointerDown ();
 					timer = 0f;
 				}
-			} else{
+			} else {
 				timer = 0f;
-				load_bar.SetActive(false);
+				load_bar.SetActive (false);
 			}
 
 			//Move piece to board: 
 			if (this.is_moving) {
 				float step = speed * Time.deltaTime;
-				this.transform.position = Vector3.MoveTowards(this.transform.position, this.target.position, step);
+				this.transform.position = Vector3.MoveTowards (this.transform.position, this.target.position, step);
 
 				this.x_angle += Time.deltaTime * -this.rotate_speed;
 				this.transform.rotation = Quaternion.Euler (this.x_angle, 0, 0);
@@ -132,6 +131,9 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 
 
+		} else if((this.my_piece_manager.current_question > this.appear_on_question)
+			&& !this.is_correct){
+			Destroy (this.gameObject);
 		}
 	}//END UPDATE.
 

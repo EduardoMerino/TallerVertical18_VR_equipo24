@@ -137,7 +137,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 64e53bc128400f563a86ade43816f1c3 Assembly-CSharp.dll:.FloatTile
 3cdbcbe3eecc7b2618bb53f62d0d1466 Assembly-CSharp.dll:.PagedScrollRect
-fcc48a01d7078ce076504176e3782126 Assembly-CSharp.dll:.piezaSelect
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.piezaSelect
 9966abc051c891d18b7718dd82e9f4b0 Assembly-CSharp.dll:.GvrEye
 8dcc2f1f2300fb8d73cea378ddc8fcc8 Assembly-CSharp.dll:.ChildrenPageProvider
 82c4df0703ee0c74fec7eda7f1754686 Assembly-CSharp.dll:.GvrAudioListener
@@ -147,6 +147,7 @@ fcc48a01d7078ce076504176e3782126 Assembly-CSharp.dll:.piezaSelect
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 7b9249923df3f51f329e72d5b82d6544 Assembly-CSharp.dll:.GvrBatteryIndicator
 d16a7663a07c331d6870f5924559de23 Assembly-CSharp.dll:.GvrLaserPointer
+f6b40e43852e2950d776584d732d7605 Assembly-CSharp.dll:.pieceSelectAlt
 b7797416cbcf117e668abd95ec922572 Assembly-CSharp.dll:.GvrHead
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -209,4 +210,6 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.lookAtCameraManager
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
-8fcbfd296c53a50c4f1d2fee4369926b Assembly-CSharp.dll:.pieceManager
+82186f7c4b6c24a3c06419c63ebf5b5f Assembly-CSharp.dll:.pieceManager
+2ea7681f5b93d8c6395c05fba1373fb0 Assembly-CSharp.dll:.RenderInCubeMap
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Desapear

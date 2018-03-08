@@ -25,7 +25,7 @@ public class pieceManager : MonoBehaviour {
 		foreach (pieceSelectAlt piece_in_list in this.pieces_list) {
 			if ((piece_in_list.appear_on_question == this.current_question) &&
 				!piece_in_list.is_correct) {
-				Destroy (piece_in_list);
+				//Destroy (piece_in_list);
 			}
 		}
 		this.current_question++;
