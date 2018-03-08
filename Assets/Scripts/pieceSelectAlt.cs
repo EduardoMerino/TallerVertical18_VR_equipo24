@@ -67,7 +67,6 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	// Update is called once per frame
 	void Update () {
 
-		//Debug.Log ("my current question is: " + this.my_piece_manager.current_question);
 		if (this.appear_on_question == this.my_piece_manager.current_question && StartScene ) {
 
 			my_distance = Vector3.Distance (this.target.position, this.transform.position);
@@ -89,6 +88,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			/**/
 			//Handle bar behaviour: 
 			if (this.gazed_at && this.is_bar_active) {
+				
 				timer += Time.deltaTime;
 				//load_bar.SetActive (true);
 
