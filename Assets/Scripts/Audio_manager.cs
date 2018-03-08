@@ -14,16 +14,7 @@ public class Audio_manager : MonoBehaviour {
 	private int count = 0;
 	private GameObject[] pieces;
 	private Animator anim;
-	private PlayableDirector timelines;
 	private AudioSource aSrc;
-
-
-
-	// Use this for initialization
-	void Awake() {
-		this.timelines = this.GetComponentInChildren<PlayableDirector>();
-	}
-
 
 	void Start () {
 		this.anim = this.GetComponentInChildren<Animator> ();
@@ -32,31 +23,32 @@ public class Audio_manager : MonoBehaviour {
 	}
 
 	public IEnumerator start() {
-		this.timelines.Play();
 		aSrc.clip = intro;
 		aSrc.Play();
-		anim.SetTrigger ("Inicio");
 		yield return new WaitForSeconds(intro.length);
 
 		foreach(GameObject t in pieces) {
-			t.GetComponent<pieceSelectAlt>().StartScene=true;
+			t.GetComponent<pieceSelectAlt>().StartScene = true;
 		}
 
 		aSrc.clip = preguntas;
 		aSrc.Play ();
 		yield return new WaitForSeconds(preguntas.length);
-		this.timelines.Stop ();
 	}
 
 	public void PlayAudio(int State, AudioClip clip, Texture2D tex) {
 		StopAllCoroutines ();
 		if (State == 0) {
+			anim.SetInteger ("Index", count + 1);
+			anim.SetTrigger ("Inicio");
 			StartCoroutine (start ());
 			return;
 		} 
 		if (State == 1) {
 			IsQuestion = true;
 			count++;
+			anim.SetInteger ("Index", count + 1);
+			anim.SetTrigger ("Inicio");
 		} 
 		StartCoroutine (Audio (clip));
 	}

@@ -17,6 +17,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	public Transform target;
 	public AudioClip Audio;
 	public Texture2D history;
+	public Material final;
 
 	private float rim = 2.0f;
 	private float timer;
@@ -32,6 +33,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	private GameObject load_bar;
 	private Audio_manager AudioM;
 	private MeshRenderer meshR;
+	private Image_manager iMan;
 
 
 	// Use this for initialization.
@@ -42,6 +44,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		this.is_activated = false;
 		this.meshR = this.GetComponentInChildren<MeshRenderer> ();
 		this.AudioM = GameObject.FindGameObjectWithTag ("Audio").GetComponent<Audio_manager> ();
+		this.iMan = GameObject.FindGameObjectWithTag ("History").GetComponent<Image_manager> ();
 	}
 
 	//Handle pointer enter.
@@ -121,6 +124,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					this.is_on_goal = true;
 					this.is_activated = false;
 					this.transform.rotation = Quaternion.Euler (-90, 0, 0);
+					this.meshR.material = final;
 					Debug.Log ("LLegué a mi destino");
 
 					if (this.call_activate_others_once) {
@@ -131,6 +135,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 					if (this.is_correct) {
 						//Trigger correct answer sequence.
 						AudioM.PlayAudio(1,this.Audio,this.history);
+						iMan.ChangeImagesSingle (history);
 						//play audio
 						//display image.
 						//when audio ends:
@@ -142,6 +147,7 @@ public class pieceSelectAlt : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 						//Trigger incorrect answer sequence. 
 						//play audio
 						AudioM.PlayAudio(2,this.Audio,this.history);
+						iMan.ChangeImagesSingle (history);
 						//display image
 						//when audio ends:
 						this.my_piece_manager.activateAll ();
